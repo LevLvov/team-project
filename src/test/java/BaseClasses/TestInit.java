@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
-    WebDriver driver;
+    public WebDriver driver;
 
     public void getUrl(String url) {
         driver.get(url);
@@ -19,9 +19,6 @@ public class TestInit {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webElement);
     }
 
-    public void scroll (WebElement webElement) {
-
-    }
 
     @BeforeMethod
     public  void setUp(){
