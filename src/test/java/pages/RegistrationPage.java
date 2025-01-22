@@ -75,7 +75,10 @@ public class RegistrationPage extends BasePage {
     public WebElement delAcount(){
         return findLocator("//a[@href='/delete_account']");
     }
-
+    public WebElement enterEma(){return findLocator("//input[@name='email']");}
+    public WebElement enterPasswOne(){return findLocator("//input[@name='password']");}
+    public WebElement logBut() {return findLocator("//button[@data-qa='login-button']");}
+    public WebElement wrongLogPass(){return findLocator("//p[@style]");}
 
 
 }
