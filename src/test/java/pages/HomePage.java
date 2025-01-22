@@ -1,6 +1,7 @@
 package pages;
 
 import BaseClasses.BasePage;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,6 +36,7 @@ public class HomePage extends BasePage {
     }
 
 
+
     public WebElement password() {
         return findLocator("//input[@data-qa='login-password']");
     }
@@ -44,7 +46,6 @@ public class HomePage extends BasePage {
         return findLocator("//button[@data-qa='login-button']");
     }
 
-
     public WebElement clickDelete() {
         return findLocator("//a[@href='/delete_account']");
     }
@@ -52,6 +53,8 @@ public class HomePage extends BasePage {
     public WebElement errorMessage() {
         return findLocator("//div[@class=\"login-form\"][.//text()[contains(.,'Your email or password is incorrect!')]]");
     }
+    public WebElement logOut() {return findLocator("//a[@href='/logout']");}
+
 
 
 }

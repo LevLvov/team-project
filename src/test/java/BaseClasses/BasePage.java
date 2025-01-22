@@ -37,7 +37,7 @@ public class BasePage {
     }
 
     public WebElement waitClickableElement(String locator) {
-WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElement(By.xpath(locator));
 
