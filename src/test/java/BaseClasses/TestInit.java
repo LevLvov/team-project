@@ -27,9 +27,9 @@ public class TestInit {
 
     }
 
-    @AfterMethod
-    public void close () {
-        driver.quit();
-    }
+    //@AfterMethod
+    //public void close () {
+        //driver.quit();
+    //}
 
 }
