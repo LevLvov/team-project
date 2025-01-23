@@ -55,7 +55,7 @@ public class HomePage extends BasePage {
     }
     public WebElement logOut() {return findLocator("//a[@href='/logout']");}
 
-
+    public WebElement emailAddressAlreadyExist () {return findLocator("//div[@class='signup-form']//p");}
 
 }
 

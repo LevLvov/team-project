@@ -67,7 +67,7 @@ public class RegistrationPage extends BasePage {
         return findLocator("//*[@id='address1']");
     }
     public WebElement regButton(){
-        return findLocator("//*[@id=\"form\"]/div/div/div/div/form/button");
+        return findLocator("//*[@id='form']/div/div/div/div/form/button");
     }
     public WebElement contButton(){
         return findLocator("//div/a[@data-qa]");
@@ -79,6 +79,7 @@ public class RegistrationPage extends BasePage {
     public WebElement enterPasswOne(){return findLocator("//input[@name='password']");}
     public WebElement logBut() {return findLocator("//button[@data-qa='login-button']");}
     public WebElement wrongLogPass(){return findLocator("//p[@style]");}
+
 
 
 }
